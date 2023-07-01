@@ -1,3 +1,35 @@
+/* selector universal */
+
+/* *{
+
+    color: red;
+
+
+} */ 
+
+/* selector paragraph */
+/* 
+p{
+
+    color: red;
+}
+*/
+/*
+.primary-content{
+   color:red 
+
+}
+
+.test{
+
+    color:rgb(79, 245, 13)
+}
+*/
+
+/* #proba{
+
+    color: rgb(207, 15, 15);
+} */
 
 
 /*
@@ -5,34 +37,93 @@
 
     color: rgb(0, 26, 255);
 } 
+*/
 
+/*
+h1{
+    color:red
+}
+*/
+/*
+p + p{
 
-#test1{
-    color: rgb(255, 0, 0);
+    color:aqua
 }
 */
 
+/* input[type="radio"]{
 
+    color: rgb(43, 226, 58);
 
-h1,h2,h3{
-    color: blue;
+    border: 2px solid red;
 
-}
+    background-color: red;
 
-.primary-content{
+    display: block;
+    border: 2px solid red;
 
-    color: red
-}
-.secondary-content{
+    border: 2px solid red;
+} */
 
-    color: red
-}
+/* p[class="ceva"]{
+    border: 2px solid red;
 
-footer{
+} */
 
-    color: #137713;
-}
+/* [class^=pri]{
+
+    color: aqua;
+} */
 
 body{
-    background-color: blanchedalmond;
+    background-color: antiquewhite;
 }
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+
+h1{
+    
+    font-size: 2em;
+    font-family: OpenSans;
+    border-style: solid;
+    border: 3px solid hsl(278, 75%, 37%);
+    border-radius: 15px;
+    text-shadow: 3px 3px 5px rgb(204, 74, 74);
+/* BOX */
+    width: 350px;
+    height: 300;
+    background-color: rgb(189, 196, 177); 
+    box-shadow: 3px 3px 5px;
+    margin: auto;
+    /* margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px; */
+
+}
+
+#img1{
+
+    float: left;
+    margin-right:10px;
+
+      
+}
+
+/* .secondary-content{
+    border: 3px solid;
+    height: 75px;
+    overflow:auto;
+    /* overflow-clip-margin: 50px; */
+    /* overflow:scroll; */
+}
+ */
+
+ 

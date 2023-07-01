@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Lake Tahoe</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body> 
-    <header id="proba" class="main-header">
-      <span class="title">Journey through the Sierra Nevada Mountains</span>
-      <h1>Lake Tahoe, California</h1>
-    </header>
-    
-		<div class="primary-content t-border">
-			<p>
-				Lake Tahoe is one of the most breathtaking attractions located in California. It's home to a number of ski resorts, summer outdoor recreation, and tourist attractions. Snow and skiing are a significant part of the area's reputation.
-			</p>
-			<a href="#more">Find out more</a>
-      <h2>Check out all the Wildlife</h2>
-      <p>
-        As spawning season approaches, the fish acquire a humpback and protuberant jaw. After spawning, they die and their carcasses provide a feast for gatherings of <a href="#mink">mink</a>, <a href="#bears">bears</a>, and <a href="#eagles">Bald eagles</a>.
-      </p>
-			<a href="#wildlife">See the Wildlife</a>
-		</div>
+</head>
 
-		<div class="secondary-content t-border"> 
-      <h3 >From Tents to Resorts</h3>
-      <p>
-        Lake Tahoe is full of wonderful places to stay. You have the ability to sleep in the outdoors in a tent, or relax like a king at a five star resort. Here are our top three resorts:
-      </p>
-      <ul>
-        <li><a href="#hotels">Lake Tahoe Resort Hotel</a></li>
-        <li><a href="#resorts">South Lake Tahoe Resorts</a></li>
-        <li><a href="#lodging">Tahoe Ski Resort Lodging</a></li>
-      </ul>			
-      <h3  id="test1" class="test" >Pack Accordingly</h3>
-      <p>
-        One of most important things when it comes to traveling through the great outdoors is packing accordingly. Here are a few tips:
-      </p>
-      <ol  id="main-footer " >
-        <li>Bring layers of clothing</li>
-        <li>Pack sunscreen</li>
-        <li>Carry extra water just in case</li>
-        <li>Pack light</li>
-      </ol>
-		</div>
+<body>
+    <header id="proba" class="main-header">
+        <span class="title">Journey through the Sierra Nevada Mountains</span>
+        <h1>Lake Tahoe, California</h1>
+    </header>
+
+    <div class="primary-content t-border">
+        <p id="lake">
+            <img src="images/lake-tahoe.jpg" id="img1">
+            Lake Tahoe is one of the most breathtaking attractions located in California. It's home to a number of ski
+            resorts, summer outdoor recreation, and tourist attractions. Snow and skiing are a significant part of the
+            area's reputation.
+        </p>
+        <a href="#more">Find out more</a>
+        <h2>Check out all the Wildlife</h2>
+        <p>
+            As spawning season approaches, the fish acquire a humpback and protuberant jaw. After spawning, they die and
+            their carcasses provide a feast for gatherings of <a href="#mink">mink</a>, <a href="#bears">bears</a>, and
+            <a href="#eagles">Bald eagles</a>.
+        </p>
+        <a href="#wildlife">See the Wildlife</a>
+    </div>
     
-		<footer id="main-footer " class="t-border">
-			<p>All rights reserved to the state of <a href="#">California</a>.</p>
-			<a href="#top">Back to top &raquo;</a>
-		</footer>
-  </body>
+    <div class="secondary-content t-border">
+        <h3>From Tents to Resorts</h3>
+        <p>
+            Lake Tahoe is full of wonderful places to stay. You have the ability to sleep in the outdoors in a tent, or
+            relax like a king at a five star resort. Here are our top three resorts:
+        </p>
+        <ul>
+            <li><a href="#hotels">Lake Tahoe Resort Hotel</a></li>
+            <li><a href="#resorts">South Lake Tahoe Resorts</a></li>
+            <li><a href="#lodging">Tahoe Ski Resort Lodging</a></li>
+        </ul>
+        <h3 id="test1" class="test">Pack Accordingly</h3>
+        <p class="ceva"> 
+            One of most important things when it comes to traveling through the great outdoors is packing accordingly.
+            Here are a few tips:
+        </p>
+        <ol id="main-footer ">
+            <li>Bring layers of clothing</li>
+            <li>Pack sunscreen</li>
+            <li>Carry extra water just in case</li>
+            <li>Pack light</li>
+        </ol>
+    </div>
+
+    <h2>Sign up</h2>
+
+<form action="forme.html" method="POST">
+
+
+    <fieldset>
+        <legend><span class="number">1</span>Your basic info</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+
+        <br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <br>
+        <label for="password">Passowrd:</label>
+        <input type="password" id="password" name="user_password">
+        <br>
+
+        <label>Age:</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under
+            13</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under
+            13
+            or Older</label>
+        <br>
+        <label for="meeting-time">Choose a time for your appointment:</label>
+
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+            min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend><span class="number">2</span>Your profile</legend>
+
+        <label for="bio">Biography:</label>
+        <textarea id="bio" name="user_bio"></textarea>
+
+        <label for="job">Job role:</label>
+        <select id="job" name_"user_job">
+            <optgroup label="Web">
+                <option value="frontend_developer">Front-End Developers</option>
+                <option value="php_developer">PHP Developera</option>
+                <option value="python_developer">Python Developers</option>
+                <option value="rails_developer">Rails Developers</option>
+                <option value="web_developer">Web Designer</option>
+                <option value="wordpress_developer">WordPress Developera</option>
+            </optgroup>
+            <optgroup label="Mobile">
+                <option value="android_developer">Android Developer</option>
+                <option value="ios_developer">IOS Developer</option>
+                <option value="mobile_designer">Android Developer</option>
+
+            </optgroup>
+
+        </select>
+        <br>
+        <label> Interests:</label><br>
+        <input type="checkbox" id="developement" value="interest_developement" name="user_interest"><label
+            class="light" for="developement">Developement</label><br>
+        <input type="checkbox" id="design" value="intereset_design" name="user_interest"><label class="light"
+            for="design">Design</label><br>
+        <input type="checkbox" id="design" value="interest_business" name="user_interest"><label class="light"
+            for="business">Busniess</label>
+
+        <br>
+        <button type="submit">Sign Up</button>
+    </fieldset>
+</form>
+
+    <footer id="main-footer " class="t-border">
+        <p>All rights reserved to the state of <a href="#">California</a>.</p>
+        <a href="#top">Back to top &raquo;</a>
+    </footer>
+</body>
+
 </html>
